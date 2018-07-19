@@ -16,6 +16,8 @@ start:
 	mov bx, 0x0                 ; dx acts as a counter to print message string
 	mov si, message             ; si acts as a marker
 
+	; clear the screen and set to video mode
+	call video_mode	
 
 	; Print a WELCOME message
 	call print_char			
@@ -47,6 +49,13 @@ service_putchar:
     mov ah, 0xe         ; write a charecter in TTY mode
     mov bl, 0xff        ; charecter color
     int 0x10            ; video interrupt 
+	ret
+
+
+video_mode:
+	mov al, 0x2			; setting the graphical mode
+	mov	ah, 0x0			; set to video mode
+	int 0x10			; video interrupt
 	ret
 	
 ;----------------------------------------------------------------------------------------------------
