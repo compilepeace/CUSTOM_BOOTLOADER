@@ -40,3 +40,18 @@ WARNING: Image format was not specified for 'build/bootloader/bootloader.bin' an
 qemu-system-x86_64: warning: TCG doesn't support requested feature: CPUID.01H:ECX.vmx [bit 5]
 
 ```
+
+
+##  CREDITS
+This project is inspired from the book - "**`Operating Systems: From 0 to 1`**" and a big thanks to the author **`TU, DO HOANG`** for sharing his knowledge in such an easy way. I suggest anyone who's getting started or wants to peek into the internals of how operating systems are built from scratch to go through this book.
+
+
+Link to his ebook and his repository : https://github.com/tuhdo/os01
+
+
+<br>
+
+NAME  : **ABHINAV THAKUR** <br>
+EMAIL : **compilepeace@gmail.com** 
+
+
